@@ -1,0 +1,327 @@
+<head>
+
+ <title> Heffernan Data Story 2 </title>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<style>
+
+	.wrapper {
+		width:80%;
+		margin:0 auto;
+		margin-top:5%;
+
+	}
+
+	.top {
+	 		width:100%;
+	 		padding-top:30px;
+	 		border-top:1.5px solid #D5D5D5;
+	 	}
+
+	.football  {
+			
+	}
+	.total{
+	 		font-family:"Franklin Gothic Book", Helvetica, Arial, sans-serif;
+	 		font-size:1.3em;
+}
+
+	.right{
+	 		float:left;
+	 		width:55%;
+	 		margin-left:5%;
+	 		margin-top:5%;
+	 	}
+	 		}
+
+	 .gif{
+	 		float:left;
+	 		width:20%;
+	 		
+	 }
+	h1{
+		font-family:"Franklin Gothic Demi", Helvetica, Arial, sans-serif;
+		font-size: 34px;
+		font-weight:600;
+		color:#1E2261;
+	}
+	h2 {
+		font-family:"Franklin Gothic Book", Helvetica, Arial, sans-serif;
+		line-height: 1em;
+		font-weight: 200;
+		font-size: 18px;
+		color:#595959;
+	}
+	h3{
+		font-family:"Franklin Gothic Book", Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		font-weight:bold;
+		color:#1E2261;
+	}
+	h4 {
+		font-family:"Franklin Gothic Book", Helvetica, Arial, sans-serif;
+		line-height: 1em;
+		font-weight: 200;
+		font-size: 14px;
+		color:#595959;
+	}
+	p {
+		font-family:"Franklin Gothic Book", Helvetica, Arial, sans-serif;
+		line-height: 1.4em;
+		font-weight: 150;
+		font-size: 16px;
+		color:#595959;
+	}
+
+	.source {
+		font-family: "Franklin Gothic Book", Helvetica, Arial, sans-serif;
+		font-size: 10px;
+		color:#595959;
+		line-height: 1em;
+		float:right;
+	}
+
+	.left {
+			
+	 		float:left;
+	 		width:40%;
+	}
+	.left1 {
+			margin-top: 5%;
+	 		float:right;
+	 		width:60%;
+	 		
+	}
+	.left2 {
+			
+	 		float:left;
+	 		width:25%;
+	}
+	.left3 {
+			
+	 		float:left;
+	 		width:61%;
+	}
+	.chart3 {
+			float:left;
+	 		width:35%;
+
+	 	}
+	
+	}
+
+	 	/*TABLET*/
+
+	 	@media (max-width:880px) {
+
+	 		body{
+	 			margin: 10px;
+	 			}
+	 		.left{
+	 			width:100%;
+	 			float:none;
+	 		}
+	 		.right{
+	 			width:80%;
+	 			float:none;
+	 			margin-left:0%;
+	 			
+	 		}
+	 		.left {
+			
+	 			float:left;
+	 			width:40%;
+	}
+			.left1 {
+					margin-top: 5%;
+			 		float:right;
+			 		width:60%;
+			 		
+			}
+			.left2 {
+					
+			 		float:none;
+			 		width:25%;
+			}
+			.left3 {
+					
+			 		float:none;
+			 		width:61%;
+			}
+			.chart3 {
+					float:left;
+			 		width:35%;
+
+			 	}
+			.gif{
+	 			float:left;
+	 			width:20%;
+	 		
+			 		
+			 		}
+	 		.clear{clear: both;}
+	 	}
+
+
+	 	/*MOBILE*/
+
+	 	@media (max-width: 480px) {
+	 		.right img{
+	 			width:120%;
+	 			margin-right: 0;}
+
+	 		
+	 		
+	 	}
+
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		
+		<h1> MLS Salaries are on the Rise</h1>	
+		<h2>The average base salary of an MLS player has more than doubled over the past ten years. </h2>
+		<h4>
+			By Geneva Heffernan | March 30, 2017
+			</h4>
+		
+		<div class="top">
+			<div class="left">
+			
+			
+			<p>While Major League Soccer players are still paid less than those of any other American major league sport, their average base salary is rising at a rapid rate. 
+				In the past ten years, MLS average base salary increased by 180 percent, more than doubling, and that rate continues to rise. While this figure is influenced by particularly high-earning players, the overall pay for the league has seen the effects with the median base salary increasing by 142 percent. <br>
+				<br>
+				To bring this to an individual level, Brad Davis has played in MLS since 2002. Skipping his early years, his salary increased from $120,000 in 2007 while playing for the Houston Dynamos, to $355,000 in 2016 while playing for Sporting Kansas City, which is a 196% increase in ten years. In February 2017, Davis signed a one-day contract to retire with the Dynamos. Davis was not one of the 21 players making over a million dollar salaries, and while he was in the top hundred highest paid players for 2016, he is a testament to the changes in MLS over the past 15 years for the ordinary players too. <br>
+
+				<br>
+				
+			</p>
+
+			<div class="gif">
+				<img src="gif-percent.gif"></img>
+				
+			</div>
+					
+			</div>
+		
+			<div class="right" id="chart1"></div>
+		
+			<div class="source">
+						
+			SOURCE: Major League Soccer Players Union
+
+		</div>
+		</div>
+
+		<br>
+		
+
+				
+
+			<div class="left1">
+			
+				<p>Compared to that of the National Football League, the MLS average salary increase stands out. In the past five years alone, MLS average base salary has risen by 86 percent, a stark contrast to that of the NFL which has risen a mere 17 percent in that span. The NFL and MLS have team salary caps which in 2016 were $155.27 million and $3.845 million respectively. The caps illustrate the vast difference in funding for the two sports, but the rates show the ways the salaries are changing. 
+				<br>
+				<br>
+				MLS still falls far below the four major professional sports in the United States. In international professional sports revenue rankings, American NBA, NFL, and MLB are at the top, followed by Premier League and the NHL. MLS currently falls 12th on the list.
+				</p>
+			</div>
+			<br>
+			<br>
+		
+		
+		<div class="left3">
+			<p>
+			There has been an influx of foreign players in the past 20 years. There are currently over 200 foreign players in the league, many of whom came from higher tiered leagues such as the Premier League, German Football League, France Ligue 1, etc. Over 40 percent of the league’s players are foreign-born, and at least 30 percent have been capped at least once by their respective national team's first squad. In 1996, the percentage of foreign-born players hovered around 30 percent. 
+			<br>
+			<br>
+			2016 nationality data from footballsquads.co.uk showed that per FIFA nationality 49 percent of MLS players are American, with the rest being an assortment of other nationalities. In total, including the U.S. players, the top ten nationalities accounted for 75 percent of the players. The top ten nationalities ranged North, Central, and South America, to Europe, to Africa, a diverse mix in the largest representations. 
+			</p>
+		</div>
+				<div class="chart3">
+					<img src="33chart.png"></img>
+				</div>
+				</div>
+
+		
+
+	</div>
+	
+<!-- JS: CHART1 -->
+
+<script> 
+	
+	$(function() {
+
+		var myChart =Highcharts.chart('chart1', {
+
+			chart: {
+				type: 'column'
+			},
+
+			series: [{
+
+
+				name: 'Average base salary',
+				data: [103715,104706,120874,155983,142840,156124,147238,204008,264403,290246],
+				color: '#1E2261',				
+				pointWidth: 40
+			
+			},
+			
+			],
+
+			plotOptions: {
+				column: {
+					stacking: 'normal'
+				}
+			},
+
+			xAxis: {
+				categories:['2007', '2008','2009','2010','2011','2012','2013','2014','2015','2016']
+			},
+
+			yAxis: {
+				title: {
+					text:'Average base salary ($)'
+				}
+			},
+
+			title: {
+				text:''
+			},
+
+			credits: {
+				enabled:false
+			},
+
+
+			tooltip: {
+
+
+				formatter: function() {
+					return '$' + this.y + ' was the average salary for ' + this.x 
+				}
+			}
+
+
+
+		});
+
+	});
+
+
+
+
+
+</script>
+
+
+
+			
+
+
+</div>
+
+</body>
