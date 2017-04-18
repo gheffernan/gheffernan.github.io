@@ -1,0 +1,59 @@
+<head>
+	 <title>Geneva Extra Credit</title>
+	 	<style> 
+	 	@font-face{
+	 		font-family:"Franklin Bold";
+	 		src:url(fonts/ITCFranklinGothicStd-Med.otf);
+	 	}
+	 	@font-face{
+	 		font-family:"Franklin Light";
+	 		src:url(fonts/franklin-gothic-light.ttf);
+	 	}
+
+	 	body {
+	 		margin:40px;
+	 		color:#2a2a2a;
+	 	}
+	 	h1{
+	 		font-family:"Franklin Bold",Helvetica,Arial,sans-serif;
+	 		font-size:1.8em
+	 		font-weight:800;
+	 	}
+	 	p{
+	 		font-family: "Franklin Light",Helvetica, Arial, sans-serif;
+	 		font-size:1,1em;
+	 		line-height:1.5em;
+	 		word-spacing: -1px;
+	 	}
+	 	.middle{
+	 		text-align:;
+	 		clear:both;
+	 	}
+	 	.story-link{
+	 		font-family:Georgia,serif;
+	 		font-size:1em;
+	 		font-style:italic;
+	 		color:#2e6d9d;
+	 		text-decoration:underline;
+	 	}
+	 	.story-link:hover{
+	 		color: #337ab7;
+	 	}
+
+	 	}
+	 	</style>
+</head>
+ <body>
+ 	<h1> Heffernan Extra Credit </h1>
+	<div class="middle" align="center">
+		<p class:"link">
+			[<a class="story-link" href="https://drive.google.com/open?id=1rPzjR35sUufPplh3vxIT-lccAtI&usp=sharing">Heffernan Google myMap</a>]
+		</p>
+
+	</div>
+
+
+
+
+
+ </body>
